@@ -11,12 +11,18 @@
   <body>
     <h1>Number Return</h1>
     <h3>Enter a number and press go! A return list of numbers from zero up to the input number will be displayed. Keep an eye out for a few surprises!</h3>
+
     <div class="container">
       <form id="numberForm">
         <label for="numberInput">Input a number of your choice here:</label>
         <input type="text" id="number" class="form-control">
         <button type="submit" name="btn btn-primary">Go!</button>
       </form>
+
+      <div class="hidden">
+        <h3>These are the numbers from 0 up to <span id="theNumber"></span></h3>
+        <p><span id="numberList"></span></p>
+      </div><!--numberOutput-->
 
     </div><!--container-->
   </body>
