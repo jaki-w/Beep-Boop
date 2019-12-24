@@ -16,16 +16,17 @@ var ouputNumber = function(userInput) {
 }
 //everything below this line is user interface logic
 $(document).ready(function() {
+  $(".output").hide();
   $("form#numberForm").submit(function(event) {
     event.preventDefault();
 
     var inputNumber = parseInt($(number).val());
-    var result = newNumber(inputNumber);
+    var result = inputNumber;
     alert(inputNumber);
 
-    $(finalResult).text("#numberList");
+    $(result).text("#numberList");
 
-    $("#theNumber").text(index -1);
+    $("#theNumber").text(inputNumber);
     $(".output").show();
   });
 });
