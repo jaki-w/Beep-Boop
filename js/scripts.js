@@ -1,30 +1,31 @@
 var ouputNumber = function(userInput) {
-  var finalList = [];
+  var reply = [];
 
   for (var index = 0; index <= inputNumber; index += 1) {
     if (index.includes("1")) {
-      results.push("Beep!");
+      reply.push("Beep!");
     } else if (index.includes("2")) {
-      results.push("Boop!");
+      reply.push("Boop!");
     } else if (index.includes("3")) {
-      results.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      reply.push("I'm sorry, Dave. I'm afraid I can't do that.");
     } else {
-      results.push(' ' + index);
+      reply.push(' ' + index);
     }
   }
-    return finalList;
-
+  return finalList;
+}
 //everything below this line is user interface logic
 $(document).ready(function() {
   $("form#numberForm").submit(function(event) {
     event.preventDefault();
 
     var inputNumber = parseInt($(number).val());
+    var result = newNumber(inputNumber);
     alert(inputNumber);
-    return results;
-    alert(index);
-    $('ol').text(index);
-  $("#theNumber").text(index -1);
-  $(".output").show();
-});
+
+    $(finalResult).text("#numberList");
+
+    $("#theNumber").text(index -1);
+    $(".output").show();
+  });
 });
