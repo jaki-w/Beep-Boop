@@ -1,4 +1,4 @@
-var ouputNumber = function(inputNumber) {
+function update(inputNumber) {
   var result = [];
 
   for (var i = 0; i <= parseInt(inputNumber); i += 1) {
@@ -11,7 +11,7 @@ var ouputNumber = function(inputNumber) {
     } else if (string.includes("3")) {
       result.push("I'm sorry, Dave. I'm afraid I can't do that.");
     } else {
-      result.push(' ' + string);
+      result.push(string);
     }
   }
   return result;
@@ -22,13 +22,13 @@ $(document).ready(function() {
   $("form#numberForm").submit(function(event) {
     event.preventDefault();
 
-    var inputNumber = parseInt($(number).val());
-    var result = inputNumber;
-    alert(inputNumber);
+    var finalNumber = parseInt($("#number").val());
+    var finalResult = update(finalNumber);
+    alert(finalNumber);
 
-    $(result).text("#numberList");
+    $(".output").text(finalResult);
 
-    $("#theNumber").text(inputNumber);
+    $("#theNumber").text(finalNumber);
     $(".output").show();
   });
 });
