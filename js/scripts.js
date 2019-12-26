@@ -10,7 +10,7 @@ function update(inputNumber) {
       result.push("Boop!");
     } else if (string.includes("3")) {
       result.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else if (isNaN(string)) {
+    } else if (isNaN(inputNumber)) {
       result.push("Please enter a number!");
     } else {
       result.push(string);
