@@ -20,11 +20,34 @@ _A web application that takes takes an input number from a user and returns all 
 
 ## Specs
 
-| Behavior            | Input             | Output             |
-| _ _ _ _ _ _ _ _ _ _ | _ _ _ _ _ _ _ _ _ | _ _ _ _ _ _ _ _ _ _|
-| All numbers from 0  | 6                 | 1, 2, 3, 4, 5 , 6, |
-| up to input number  |                   |                    |
-| are displayed.      |                   |                    |
+| Behavior              |    Input            | Output          |
+|-----------------------|:-------------------:|----------------:|
+| All numbers from 0 to | 7                   | 0, 1, 2, 3, ..7 |
+| input number are      |                     |                 |
+| displayed             |                     |                 |
+|                       |                     |                 |
+| When input number     | 1                   | Beep!           |
+| includes 1 "Beep!" is |                     |                 |
+| displayed.            |                     |                 |
+|                       |                     |                 |
+| When input number     | 2                   | Boop!           |
+| inludes 2 "Boop!" is  |                     |                 |
+| displayed.            |                     |                 |
+|                       |                     |                 |
+| When input number     | 3                   | I'm sorry, Dave.|
+| includes 3 "I'm sorry"|                     | I'm afraid I    |
+| message is displayed  |                     | can't do that.  |
+|                       |                     |                 |
+| When input is not a   | hello               | Please enter a  |
+| number "Please enter  |                     | number.         |
+| a number" is          |                     |                 |
+| displayed.            |                     |                 |
+|                       |                     |                 |
+| Numbers with multiple | 12                  | Boop!           |
+| digits are processed  |                     |                 |
+| in order of exception |                     |                 |
+| (with 3 being most    |                     |                 |
+| important)            |                     |                 |
 
 ## Technologies Used
 
