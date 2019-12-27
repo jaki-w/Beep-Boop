@@ -4,10 +4,16 @@ function update(inputNumber) {
   for (var i = 0; i <= parseInt(inputNumber); i += 1) {
     var string = i.toString();
 
-    if (string.includes("1")) {
-      result.push("Beep!");
-    } else if (string.includes("2")) {
+    if (string.includes("1" && "3")) {
+      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (string.includes("1" && "2")) {
       result.push("Boop!");
+    } else if (string.includes("1")) {
+      result.push("Beep!");
+    } else if (string.includes("2" && "3")) {
+      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (string.includes("2")) {
+      result.push("Boop!")
     } else if (string.includes("3")) {
       result.push("I'm sorry, Dave. I'm afraid I can't do that.");
     } else if (isNaN(inputNumber)) {
