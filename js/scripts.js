@@ -17,7 +17,7 @@ function update(inputNumber) {
     } else if (string.includes("3")) {
       result.push("I'm sorry, Dave. I'm afraid I can't do that.");
     } else if (isNaN(inputNumber)) {
-      result.push("Please enter a number!");
+      alert("Please enter a number!");
     } else {
       result.push(string);
     }
@@ -34,9 +34,10 @@ $(document).ready(function() {
     var finalResult = update(finalNumber);
     alert(finalNumber);
 
-    $(".output").text(finalResult);
+    $("#theNumber").append(finalNumber);
 
-    $("#theNumber").text(finalNumber);
+    $(".output").append(finalResult);
+
     $(".output").show();
   });
 });
