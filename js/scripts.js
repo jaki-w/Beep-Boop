@@ -5,21 +5,21 @@ function update(inputNumber) {
     var string = i.toString();
 
     if (string.includes("1" && "3")) {
-      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      result.push("I'm sorry, Dave. I'm afraid I can't do that." + " ");
     } else if (string.includes("1" && "2")) {
-      result.push("Boop!");
+      result.push("Boop!" + " ");
     } else if (string.includes("1")) {
-      result.push("Beep!");
+      result.push("Beep!" + " ");
     } else if (string.includes("2" && "3")) {
-      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      result.push("I'm sorry, Dave. I'm afraid I can't do that." + " ");
     } else if (string.includes("2")) {
-      result.push("Boop!")
+      result.push("Boop!" + " ")
     } else if (string.includes("3")) {
-      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      result.push("I'm sorry, Dave. I'm afraid I can't do that." + " ");
     } else if (isNaN(inputNumber)) {
       alert("Please enter a number!");
     } else {
-      result.push(string);
+      result.push(string + "," + " ");
     }
   }
   return result;
@@ -34,7 +34,7 @@ $(document).ready(function() {
     var finalResult = update(finalNumber);
     alert(finalNumber);
 
-    $("#theNumber").append(finalNumber);
+    $("#theNumber").text(finalNumber);
 
     $(".output").append(finalResult);
 
