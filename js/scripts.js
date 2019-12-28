@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     $("#theNumber").text(finalNumber);
 
-    $(".output").append(finalResult);
+    $("#finalOutput").text(finalResult);
 
     $(".output").show();
   });
